@@ -10,7 +10,7 @@
 }
 
 .listing-wrap {
-	
+
 }
 
 .listing-item {
@@ -18,6 +18,7 @@
 	padding: $grid-spacing/2;
 	float: left;
 	width: 50%;
+	
 
 	@include mq(tabletl) {
 		width: 33.33%;
@@ -31,6 +32,7 @@
 .listing-item__link {
 	position: relative;
 	display: block;
+	
 
 	@include mq(tabletl) {
 
@@ -51,9 +53,14 @@
 
 .listing-item__image {
 	width: 100%;
+
+	img {
+		border-radius: 15px;
+	}
 }
 
 .listing-item__content {
+	border-radius: 15px;
 	position: absolute;
 	top: 0;
 	right: 0;
