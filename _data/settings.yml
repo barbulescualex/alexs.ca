@@ -21,7 +21,7 @@ footer_settings:
   footer_tagline: Professional App Developer. Computer Engineering student at the University of Waterloo.
 
 grid_settings:
-  overlay_opacity: 0.8
+  overlay_opacity: 1
   grid_spacing: 10
   content_alignment: bottom
 
@@ -67,7 +67,7 @@ color_settings:
   text_light_color: '#ABB7B7'
   accent_color: '#b19db7' #'#6EEB95' #'#4ecdc4'
   border_color: '#000000' #'#dddddd'
-  overlay_background_color: '#6EEB95'
+  overlay_background_color: '#000000'
   overlay_text_color: '#ffffff'
   overlay_accent_color: '#6EEB95' #'#2A2F36'
   error_color: '#D64541'
