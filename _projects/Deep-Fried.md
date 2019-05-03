@@ -1,106 +1,114 @@
 ---
 title: 'Deep Fried'
 subtitle: 'The most popular deep fryer on the App Store!'
+titleLink: 'https://deepfried.app'
 icon: apple
 date: 2018-07-14 00:00:00
 description: Board is a stylish full-width masonry grid theme. Made for designers, artists, photographers and developers to show off their best work.
-featured_image: '/images/demo/square-05.jpg'
+featured_image: '/images/DF/dfCard.png'
 ---
 
-![](/images/demo/landscape-01.jpg)
-
-## Demo content
-
-This page is a demo that shows everything you can do inside portfolio and blog posts.
-
-We've included everything you need to create engaging posts about your work, and show off your case studies in a beautiful way.
-
-**Obviously,** we’ve styled up *all the basic* text formatting options [available in markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-You can create lists:
-
-* Simple bulleted lists
-* Like this one
-* Are cool
-
-And:
-
-1. Numbered lists
-2. Like this other one
-3. Are great too
-
-You can also add blockquotes, which are shown at a larger width to help break up the layout and draw attention to key parts of your content:
-
-> “Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it’s worth it in the end because once you get there, you can move mountains.”
-
-The theme also supports markdown tables:
-
-| Item                 | Author        | Supports tables? | Price |
-|----------------------|---------------|------------------|-------|
-| Duet Jekyll Theme    | Jekyll Themes | Yes              | $39   |
-| Index Jekyll Theme   | Jekyll Themes | Yes              | $39   |
-| Journal Jekyll Theme | Jekyll Themes | Yes              | $39   |
-
-You can throw in some horizontal rules too:
-
----
-
-### Image galleries
-
-Here's a really neat custom feature we added – galleries:
-
-<div class="gallery" data-columns="3">
-	<img src="/images/demo/square-01.jpg">
-	<img src="/images/demo/portrait-02.jpg">
-	<img src="/images/demo/square-02.jpg">
-	<img src="/images/demo/square-03.jpg">
-	<img src="/images/demo/square-04.jpg">
-	<img src="/images/demo/landscape-05.jpg">
+<div class="center">
+	<h1><i class="fab fa-apple"></i> Deep Fried</h1>
+	<br>
+	<img src="/images/DF/DeepFriedAppIcon.png" class= "roundedAppIcon" width="5%" height="5%"/>
+	<h2>4.7/5 stars | 1200+ ratings</h2>
+	<br>
+	<a href="https://itunes.apple.com/us/app/deep-fried/id1436647902?mt=8&uo=4" class="button button--large red">Download</a>
+	<a href="https://deepfried.app/" class="button button--large red">Visit Website</a>
+</div>
+<div class="gallery" data-columns="5">
+	<img src="/images/DF/CameraPreviewX.png" class= "roundedImage">
+	<img src="/images/DF/galleryX.png" class= "roundedImage">
+	<img src="/images/DF/warpX.png" class= "roundedImage">
+	<img src="/images/DF/editX.png" class= "roundedImage">
+	<img src="/images/DF/saveX.png" class= "roundedImage">
 </div>
 
-Inspired by the Galleries feature from WordPress, we've made it easy to create grid layouts for your images. Just use a bit of simple HTML in your post to create a masonry grid image layout:
+---
 
-```html
-<div class="gallery" data-columns="3">
-    <img src="/images/demo/square-01.jpg">
-    <img src="/images/demo/portrait-02.jpg">
-    <img src="/images/demo/square-02.jpg">
-    <img src="/images/demo/square-03.jpg">
-    <img src="/images/demo/square-04.jpg">
-    <img src="/images/demo/landscape-05.jpg">
-</div>
-```
+### What is it
 
-*See what we did there? Code and syntax highlighting is built-in too!*
+Deep Fried is an image editing and processing application. I'm the **sole developer and maintainer** of this application!
 
-Change the number inside the 'columns' setting to create different types of gallery for all kinds of purposes. You can even click on each image to seamlessly enlarge it on the page.
+You can:
+
+* Take fried images straight from your camera
+* Warp images
+* Add text
+* Add custom assets
+* Interact directly with your Deep Fried Meme folder in your camera roll
 
 ---
 
-### Image carousels
+### Technical Details
 
-Here's another gallery with only one column, which creates a carousel slide-show instead.
+As an image editing and processing application Deep Fried presented many technical hurdles to overcome. Developing novel features that nobody has done presented a lot of pain points.
 
-A nice little feature: the carousel only advances when it is in view, so your visitors won't scroll down to find it half way through your images.
+#### Frameworks Used:
+* MetalKit
+* Core Image
+* AVFoundation
+* PhotoKit
+* Core Data
+* Firebasae (analytics tools)
 
-<div class="gallery" data-columns="1">
-	<img src="/images/demo/landscape-02.jpg">
-	<img src="/images/demo/landscape-03.jpg">
-	<img src="/images/demo/landscape-04.jpg">
-</div>
-
-### What about videos?
-
-Videos are an awesome way to show off your work in a more engaging and personal way, and we’ve made sure they work great on our themes. Just paste an embed code from YouTube or Vimeo, and the theme makes sure it displays perfectly:
-
-<iframe src="https://player.vimeo.com/video/107469489" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+Talking about each individual feature by itself is the easiest way to present the technical difficulties
 
 ---
 
-## Pretty cool, huh?
+#### Deep Fried Camera: AVFoundation | Core Image | MetalKit
 
-We've packed this theme with powerful features to show off your work.
+Perhaps this is my most novel feature inside the application. I take buffer data in from the camera, apply the filters on the data and display it back to the screen in real time.
 
-Why not put them to use on your new portfolio?
+**GPU and CPU**
 
-<a href="https://jekyllthemes.io/theme/board-portfolio-jekyll-theme" class="button button--large">Get This Theme</a>
+At first this process was very CPU intensive as I would be creating a CIImage from the buffer data to apply the filters (this takes place on the GPU through the Core Image framework) but then transforming it into a UIImage to display in an UIImageView on screen 30FPS. While this worked just fine the overall resource usage was very high. I then set out to optimize this by removing the need for the CPU to do work by displaying the data from the GPU directly from the screen. This led me into using the MetalKit framework, replacing the UIImageView with a MetalKit view. 
+
+While this significantly cut down on my resource usage, I noticed older devices (pre  A10) could not handle the MetalKit view inside of my application. So for those devices I still use the CPU to display the processed camera feed.
+
+**Initiating & Switching Cameras**
+
+Unsuprisingly these processes can be very slow on the main thread. Moving these to background threads is mandatory (well not really, only if you want to provide a better user experience)
+
+---
+
+#### General Frying:
+
+This is simply an extension of the Deep Fried camera (well this one actually came first). The only difference is instead of creating a CIImage from the buffer data I create it from the UIImage the user took/selected.
+
+---
+
+#### Warp Controller: Core Image
+
+The warp controller allows you to bump, pinch and swirl images based on touch input. You can adjust the radius and intensity of the effect.
+
+**Translating Touches**
+
+This was the most annoying part of this feature by far, mainly because I tried to be lazy instead of actually doing some math. To effectively translate touches on an UIImageView holding an image into tangible coordinates (and radius of effect) for the *actual image* you need to know the pixel density difference of the screen vs image and figure out how it's sitting inside the UIImageView. (It would be nice if the UIImageView could provide this sort of information).
+
+After calculating the density difference, some ratio math can let you know wether all the sides are touching the UIImageView (super rare) or wether the top/bottom or left/right is touching the UIImageView. From there you need to calculate the no touch zones.
+
+After all that you need to remember that the UIImageView's origin point in its coordinate system is top-left while Core Image's origin is in the bottom-left.
+
+---
+
+#### Working With The Album And Collection View: PhotoKit
+
+**Interacting With The User's Camera Roll**
+
+At the root of my application resides the a UICollectionView which holds all the user's images from their album. I use a singleton class (yeah I know, sue me) to interact with the camera roll that instantiates the "Deep Fried Memes" folder if it doesn't exist, loads in thumbnails/full images, saves images, deletes images and fetches all the PHAssets.
+
+**Populating the UICollectionView**
+
+Buggy, slow, high memory usage. All things that can happen if you don't do this correctly. The saving grace is PHCachingImageManager, this API handles most of the heavy lifting in terms of optimization. 
+
+**Registering to PHPhotoLibraryDidChange**
+
+PhotoKit sends out notifications like a mad man, if you're updating the collection view every time you get this notification you're wasting a lot energy. For this reason I using a flag "needsUpdate" that only gets set to true if the user leaves the application, deletes and image or saves an image.
+
+---
+
+#### Adding Text & Custom Assets To Your Images
+
+Luckily I found an abandoned framework for this one. I updated it from Swift 3, fixed memory leaks (NONE OF THE DELEGATES WERE SET TO WEAK!) and extended its functionality. Using Core Data I let users add in their own custom assets into the Edit controller and implemented fonts.

@@ -82,6 +82,20 @@ h3, .h3 {
 	}
 }
 
+.center {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.roundedAppIcon {
+	display: block;
+	margin: 0 auto;
+	border-radius: 20%;
+}
+
+.roundedImage {
+	border-radius: 15px;
+}
 h4, .h4 {
 	margin-top: 25px;
 	font-size: $h4-small;
@@ -223,7 +237,7 @@ a {
 		padding: 11px 20px 12px;
 		font-size: 15px;
 	}
-
+	
 	&:hover {
 		background: $accent-color; //adjust-hue($accent-color,15%);
 		border-color: $accent-color; //adjust-hue($accent-color,15%);
@@ -246,6 +260,14 @@ a {
 				margin-left: 8px;
 			}
 		}
+	}
+}
+
+.red {
+	&:hover {
+		background: red;
+		border-color: red;
+		color: $background-color;
 	}
 }
 
