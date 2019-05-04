@@ -85,6 +85,10 @@ h3, .h3 {
 .center {
 	text-align: center;
 	vertical-align: middle;
+
+	img {
+		display: inline;
+	}
 }
 
 .roundedAppIcon {
@@ -267,6 +271,14 @@ a {
 	&:hover {
 		background: red;
 		border-color: red;
+		color: $background-color;
+	}
+}
+
+.blue {
+	&:hover {
+		background: blue;
+		border-color: blue;
 		color: $background-color;
 	}
 }

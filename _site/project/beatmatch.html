@@ -110,14 +110,52 @@
 
 	<div class="wrap">
 		
-		<p>Audio visualization playground built with the Metal and Accelerate frameworks</p>
+		<p>Audio visualization playground built with the Metal, Accelerate and AVFoundation frameworks</p>
 		
 
 </section> -->
 
 <section class="single">
 
-	
+	<div class="center">
+    <img src="/images/BeatMatch/logo.png" />
+    <h2><i class="fab fa-apple"></i> Swift Playground Book</h2>
+    <h4>Metal | Accelerate | AVFoundation</h4>
+	<br />
+	<a href="https://github.com/barbulescualex/BeatMatch" class="button button--large blue">GitHub</a>
+    <br />
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7e6X7DzddIQ" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+<h3 id="what-is-it">What is it</h3>
+
+<p>BeatMatch is an audio visualization game relying on signal processing and metal shaders.</p>
+
+<p><img src="/images/BeatMatch/visulizerDemo.gif" /></p>
+
+<hr />
+
+<h3 id="audio-visualization---a-speed-tutorial">Audio Visualization - A Speed Tutorial</h3>
+
+<p>The sound goes through the <code class="highlighter-rouge">AVAudioEngine</code> class where a tap is inserted to get the bufferdata. From there we can calculate the uniform inputs for our metal shaders.</p>
+
+<p><strong>Current Audio Volume</strong></p>
+
+<p>This is for the bumping circle, doing a RMS calcultion and linear interpolation will get us smooth values for each draw cycle.</p>
+
+<p><strong>Frequency Magnitudes</strong></p>
+
+<p>This is a more complicated task but essentially we do a Fast Fourier Transform to get the intensity in frequency bins, chop of the imaginary part and normalize the values.</p>
+
+<hr />
+
+<h3 id="tutorials">Tutorials</h3>
+<p>I’m currently working on making tuturials out of all the things I’ve learned. Mainly Metal Shaders and signals processing. The list below will be updated as they come :).</p>
+
+<ol>
+  <li><a href="https://medium.com/@barbulescualex/using-swift-playgrounds-playground-books-87c2707be2b5">Using Swift Playgrounds &amp; Playground Books</a></li>
+  <li><a href="https://medium.com/@barbulescualex/making-your-first-circle-using-metal-shaders-1e5049ec8505">Making Your First Circle Using Metal Shaders</a></li>
+</ol>
 
 
 </section>
