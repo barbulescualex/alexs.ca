@@ -10,7 +10,7 @@ featured_image: '/images/FinTrax/fintraxCard.png'
 <div class="center">
 	<h1><i class="fab fa-apple"></i> FinTrax</h1>
     <br>
-    <img src="/images/FinTrax/logo.png" class= "roundedAppIcon" width="5%" height="5%"/>
+    <img src="/images/FinTrax/logo.png" class= "roundedAppIcon"/>
 	<br>
 	<p>The first ever iOS application used operationally worldwide supporting all air mobility squadrons within the Royal Canadian Air Force</p>
 </div>

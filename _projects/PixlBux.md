@@ -10,7 +10,7 @@ featured_image: '/images/PixlBux/pbCard.png'
 <div class="center">
 	<h1><i class="fab fa-android"></i> PixlBux</h1>
 	<br>
-	<img src="/images/PixlBux/logo.png" width="5%" height="5%"/>
+	<img src="/images/PixlBux/logo.png" class="appIcon"/>
 	<br>
 </div>
 <div class="gallery" data-columns="5">

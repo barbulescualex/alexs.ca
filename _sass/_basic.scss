@@ -91,10 +91,55 @@ h3, .h3 {
 	}
 }
 
-.roundedAppIcon {
+.soundcloud {
+	text-align: center;
+	vertical-align: middle;
+	display: inline;
+	
+	@include mq(tabletp) {
+		width: 90%;
+		height: 100px;
+	}
+
+	@include mq(tabletl) {
+		width: 90%;
+		height: 100px;
+	}
+
+	@include mq(laptop) {
+		width: 80%;
+		height: 200px;
+	}
+
+	@include mq(desktop) {
+		width: 75%;
+		height: 250px;
+	}
+}
+
+img.roundedAppIcon {
 	display: block;
 	margin: 0 auto;
 	border-radius: 20%;
+	max-height: 5%;
+	max-width: 5%;
+
+	@media (max-width: 500px){
+		max-height: 15%;
+		max-width: 15%;
+	}
+}
+
+img.appIcon{
+	display: block;
+	margin: 0 auto;
+	max-height: 5%;
+	max-width: 5%;
+
+	@media (max-width: 500px){
+		max-height: 15%;
+		max-width: 15%;
+	}
 }
 
 .roundedImage {
