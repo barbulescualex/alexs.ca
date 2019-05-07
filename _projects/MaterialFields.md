@@ -4,7 +4,7 @@ subtitle: 'UI driven Fields redefining user data entry and validation'
 icon: apple
 date: 2018-07-12 13:00:00
 description: A material UI driven text entry and value selection framework for modular validation layers.
-featured_image: 'https://images.theconversation.com/files/93616/original/image-20150902-6700-t2axrz.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip'
+featured_image: '/images/MaterialFields/mfCard.png'
 ---
 <div class="center">
 	<h1><i class="fab fa-apple"></i> MaterialFields</h1>
