@@ -5,26 +5,27 @@ subtitle: Board is a stylish full-width masonry grid theme. Made for designers, 
 description: Board is a stylish full-width masonry grid theme.
 featured_image: /images/demo/landscape-05.jpg
 ---
+<script type="text/javascript">
+	console.log("Train by day, Joe Rogan by night!")
+</script>
 
-<div class="gallery" data-columns="4">
+<div class="gallery" data-columns="3">
 	<img src="/images/about/me1.JPG">
     <img src="https://media.giphy.com/media/lDmsGbXcCuyOI/giphy.gif">
 	<img src="/images/about/me2.JPG">
     <img src="/images/about/IMG_0862.jpg">
-	<img src="/images/about/me3.JPG">
     <img src="https://media.giphy.com/media/st8fJ8DagstRm/giphy.gif">
 	<img src="/images/about/me4.JPG">
     <img src="https://media.giphy.com/media/W5D9oEAJvOHaE/200.gif">
-	<img src="/images/about/me5.JPG">
+    <img src="http://45.media.tumblr.com/22af44e126286e681fac01edbbd558da/tumblr_no6dwrhKK41tzye0xo3_1280.gif">
+	<!-- <img src="/images/about/me5.JPG"> -->
     <img src="/images/about/IMG_1079.JPG">
-    <img src="/images/about/me7.JPG">
+    <img src="https://media1.giphy.com/media/R1c7rUJA7uMoM/giphy.gif">
 	<img src="/images/about/me6.JPG">
     <img src="https://media.giphy.com/media/bXbwe3elqW9DW/giphy.gif">
 </div>
 
-I uhhh, really don't take  pictures.
 
-Now that I've baited you into looking at my about section, check out these tracks:
 
 <br>
 <div class="center">
@@ -33,7 +34,10 @@ Now that I've baited you into looking at my about section, check out these track
     <iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/593908995&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
     <br>
     <iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/168339659&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    <br>
+    <iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/315534364&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 </div>
+
 
 
 <!-- 

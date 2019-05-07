@@ -4,7 +4,7 @@ subtitle: 'The most popular deep fryer on the App Store!'
 titleLink: 'https://deepfried.app'
 icon: apple
 date: 2018-07-14 00:00:00
-description: Board is a stylish full-width masonry grid theme. Made for designers, artists, photographers and developers to show off their best work.
+description: The most popular deep fryer on the App Store!
 featured_image: '/images/DF/dfCard.png'
 ---
 
