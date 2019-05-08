@@ -27,7 +27,7 @@ BeatMatch is an audio visualization game relying on signal processing and metal 
 
 ### Audio Visualization - A Speed Tutorial
 
-The sound goes through the `AVAudioEngine` class where a tap is inserted to get the bufferdata. From there we can calculate the uniform inputs for our metal shaders.
+The sound goes through the `AVAudioEngine` class where a tap is inserted to get the buffer data. From there we can calculate the uniform inputs for our metal shaders.
 
 **Current Audio Volume**
 
@@ -40,7 +40,8 @@ This is a more complicated task but essentially we do a Fast Fourier Transform t
 ---
 
 ### Tutorials
-I'm currently working on making tuturials out of all the things I've learned. Mainly Metal Shaders and signals processing. The list below will be updated as they come :).
+I'm currently working on making tuturials out of all the things I've learned. Mainly Metal Shaders and signal processing. The list below will be updated as they come :).
 
 1. [Using Swift Playgrounds & Playground Books](https://medium.com/@barbulescualex/using-swift-playgrounds-playground-books-87c2707be2b5)
 2. [Making Your First Circle Using Metal Shaders](https://medium.com/@barbulescualex/making-your-first-circle-using-metal-shaders-1e5049ec8505)
+alexs.ca

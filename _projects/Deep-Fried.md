@@ -103,7 +103,7 @@ At the root of my application resides the a UICollectionView which holds all the
 
 **Populating the UICollectionView**
 
-Buggy, slow, high memory usage. All things that can happen if you don't do this correctly. The saving grace is PHCachingImageManager, this API handles most of the heavy lifting in terms of optimization. 
+Buggy, slow, high memory usage. All things that can happen if you don't do this correctly. The saving grace is the PHCachingImageManager, this API handles most of the heavy lifting in terms of optimization. 
 
 **Registering to PHPhotoLibraryDidChange**
 
@@ -113,4 +113,4 @@ PhotoKit sends out notifications like a mad man, if you're updating the collecti
 
 #### Adding Text & Custom Assets To Your Images
 
-Luckily I found an abandoned framework for this one. I updated it from Swift 3, fixed memory leaks (NONE OF THE DELEGATES WERE SET TO WEAK!) and extended its functionality. Using Core Data I let users add in their own custom assets into the Edit controller and implemented fonts.
+Luckily I found an abandoned framework for this one. I updated it from Swift 3, fixed memory leaks and extended its functionality. Using Core Data I let users add in their own custom assets into the Edit controller and implemented fonts.

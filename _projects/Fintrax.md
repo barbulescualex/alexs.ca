@@ -16,15 +16,15 @@ featured_image: '/images/FinTrax/fintraxCard.png'
 </div>
 
 <div class="gallery" data-columns="1">
-	<img src="/images/FinTrax/1.png">
-	<img src="/images/FinTrax/2.png">
-	<img src="/images/FinTrax/3.png">
+	<img src="/images/FinTrax/1.png" class = "height">
+	<img src="/images/FinTrax/2.png" class = "height">
+	<img src="/images/FinTrax/3.png" class = "height">
 </div>
 ### What is it
 
 FinTrax is a data and expense tracking application designed to be used in flight on air mobility missions. It tracks everything from aircraft expenses and services to crew expenses and per diems. 
 
-You want to know more? I go in depth in my article here.
+If you want to know more, I go in depth in my article here.
 
 ---
 

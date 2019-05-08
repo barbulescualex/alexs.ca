@@ -46,4 +46,4 @@ PixlBux was a proof of concept with a lot of research behind it. There was a lot
 
 The B2B facing android application allows you to generate and add QR Codes to images either in a fixed white-space on the side of the image with color coded tags or free placed anywhere.
 
-The background image is fixed with a dynamic "sticker" overlay in which the user can move, zoom, and rotate the "stickers" (QR codes or color tags). Upon saving the sticker layer is drawn onto the background image. There was a lot of learning that came along with the graphics work ultimately leading me to start my own image editing and processing iOS application, [Deep Fried](/project/deep-fried).
+The background image is fixed with a dynamic "sticker" overlay in which the user can move, zoom, and rotate the "stickers" (QR codes or color tags). Upon saving the sticker layer is drawn onto the background image. There was a lot of learning that came along with the graphics work ultimately leading me to start my own image editing and processing application, on the iOS platform, [Deep Fried](/project/deep-fried).

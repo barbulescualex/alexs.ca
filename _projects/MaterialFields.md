@@ -1,6 +1,6 @@
 ---
 title: 'MaterialFields' 
-subtitle: 'UI driven Fields redefining user data entry and validation'
+subtitle: 'A material UI driven text entry and value selection framework for modular validation layers.'
 icon: apple
 date: 2018-07-12 13:00:00
 description: A material UI driven text entry and value selection framework for modular validation layers.
