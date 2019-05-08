@@ -10,9 +10,10 @@
 
 .footer {
 	@include transition(all 0.4s ease-in-out 0.8s);
-	margin-top: 20px;
-	//position: absolute;
-	bottom: 0;
+	// margin-top: 20px;
+	// position: relative;
+	// bottom: 0;
+	flex-shrink: 0;
 	.wrap {
 		max-width: 100%;
 
