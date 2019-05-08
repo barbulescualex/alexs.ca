@@ -95,25 +95,31 @@ h3, .h3 {
 	text-align: center;
 	vertical-align: middle;
 	display: inline;
+	height: 15em;
+
+	@include mq(phonel) {
+		width: 95%;
+		//height: 100px;
+	}
 	
 	@include mq(tabletp) {
 		width: 90%;
-		height: 100px;
+		// height: 150px;
 	}
 
 	@include mq(tabletl) {
 		width: 90%;
-		height: 100px;
+		// height: 150px;
 	}
 
 	@include mq(laptop) {
 		width: 80%;
-		height: 200px;
+		// height: 200px;
 	}
 
 	@include mq(desktop) {
 		width: 75%;
-		height: 250px;
+		// height: 250px;
 	}
 }
 
@@ -121,13 +127,8 @@ img.roundedAppIcon {
 	display: block;
 	margin: 0 auto;
 	border-radius: 20%;
-	max-height: 5%;
-	max-width: 5%;
-
-	@media (max-width: 500px){
-		max-height: 15%;
-		max-width: 15%;
-	}
+	max-height: 6rem;
+	max-width: 6rem;
 }
 
 img.appIcon{

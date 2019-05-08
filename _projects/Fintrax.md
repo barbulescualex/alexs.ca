@@ -15,10 +15,10 @@ featured_image: '/images/FinTrax/fintraxCard.png'
 	<p>The first ever iOS application used operationally worldwide supporting all air mobility squadrons within the Royal Canadian Air Force</p>
 </div>
 
-<div class="gallery" data-columns="3">
-	<img src="/images/FinTrax/1.png" class= "roundedImage">
-	<img src="/images/FinTrax/2.png" class= "roundedImage">
-	<img src="/images/FinTrax/3.png" class= "roundedImage">
+<div class="gallery" data-columns="1">
+	<img src="/images/FinTrax/1.png">
+	<img src="/images/FinTrax/2.png">
+	<img src="/images/FinTrax/3.png">
 </div>
 ### What is it
 

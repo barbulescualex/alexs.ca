@@ -9,6 +9,7 @@
 	position: relative;
 	max-width: 90%;
 	margin: 20px auto;
+	z-index: 10;
 
 	@include mq(tabletp) {
 		max-width: 83%;
@@ -16,7 +17,7 @@
 	}
 
 	@include mq(laptop) {
-		max-width: 75%;
+		max-width: 50%;
 		margin: 40px auto;
 	}
 
