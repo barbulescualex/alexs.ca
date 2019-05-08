@@ -312,6 +312,49 @@ a {
 	}
 }
 
+.buttonBlue {
+	display: inline-block;
+	padding: 9px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	font-size: 13px;
+	line-height: 1;
+	border: 2px solid black;//$accent-color;
+	background: black;//$accent-color;
+	color: $background-color;
+	font-weight: $button-weight;
+	letter-spacing: $button-spacing;
+	cursor: pointer;
+
+	@include mq(tabletp) {
+		padding: 11px 20px 12px;
+		font-size: 15px;
+	}
+	
+	&:hover {
+		background: blue; //adjust-hue($accent-color,15%);
+		border-color: blue; //adjust-hue($accent-color,15%);
+		color: $background-color;
+	}
+
+	svg {
+		margin-right: 5px;
+
+		&:last-child {
+			margin-right: 0;
+			margin-left: 5px;
+		}
+
+		@include mq(tabletp) {
+			margin-right: 8px;
+
+			&:last-child {
+				margin-right: 0;
+				margin-left: 8px;
+			}
+		}
+	}
+}
+
 .red {
 	&:hover {
 		background: red;
@@ -320,13 +363,6 @@ a {
 	}
 }
 
-.blue {
-	&:hover {
-		background: blue;
-		border-color: blue;
-		color: $background-color;
-	}
-}
 
 .button--large {
 	padding: 15px 20px 16px;
