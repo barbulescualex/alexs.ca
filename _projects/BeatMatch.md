@@ -3,7 +3,7 @@ title: 'BeatMatch'
 subtitle: 'Audio visualization playground built with the Metal, Accelerate and AVFoundation frameworks'
 icon: apple
 date: 2018-07-12 12:00:00
-description: Board is a stylish full-width masonry grid theme. Made for designers, artists, photographers and developers to show off their best work.
+description: Audio visualization playground built with the Metal, Accelerate and AVFoundation frameworks.
 featured_image: '/images/BeatMatch/BeatMatchCard.png'
 ---
 

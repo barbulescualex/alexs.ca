@@ -1,9 +1,9 @@
 ---
 title: null
 layout: pageNoTitle
-subtitle: Board is a stylish full-width masonry grid theme. Made for designers, artists, photographers and developers to show off their best work.
-description: Board is a stylish full-width masonry grid theme.
-featured_image: /images/demo/landscape-05.jpg
+subtitle: null
+description: Alex Barbulescu is developer, Computer Engineering student, Apex Legends player (ex Fortnite player, sorry Fortnite) and Netflixer.
+featured_image: /images/favicon.jpg
 ---
 <script type="text/javascript">
 	console.log("Train by day, Joe Rogan by night!")

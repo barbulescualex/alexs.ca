@@ -10,17 +10,17 @@
 	<!-- Page Info -->
 	<link rel="shortcut icon" href="/images/favicon.jpg">
 	<title>Thank you</title>
-	<meta name="description" content="Board is a stylish full-width masonry grid theme.">
+	<meta name="description" content="">
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Thank you – Alex Barbulescu">
-	<meta name="twitter:description" content="Board is a stylish full-width masonry grid theme.">
+	<meta name="twitter:description" content="">
 	<meta name="twitter:image:src" content="http://localhost:4000/images/demo/about.jpg">
 
 	<!-- Facebook OpenGraph -->
 	<meta property="og:title" content="Thank you – Alex Barbulescu" />
-	<meta property="og:description" content="Board is a stylish full-width masonry grid theme." />
+	<meta property="og:description" content="" />
 	<meta property="og:image" content="http://localhost:4000/images/demo/about.jpg" />
 
 	
@@ -108,10 +108,9 @@
 				
 				<section class="single">
 
-	<p><img src="https://66.media.tumblr.com/tumblr_lprkgdh9Pp1qdfdg1o1_500.gif" alt="" /></p>
+	![](https://66.media.tumblr.com/tumblr_lprkgdh9Pp1qdfdg1o1_500.gif)
 
-<p>I’ll get back to you as soon as I can!</p>
-
+I'll get back to you as soon as I can!
 
 </section>
 	

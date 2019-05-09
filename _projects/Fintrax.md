@@ -3,7 +3,7 @@ title: 'Fintrax'
 subtitle: 'The first ever iOS application used operationally worldwide supporting all air mobility squadrons within the Royal Canadian Air Force'
 icon: apple
 date: 2018-07-13 00:00:00
-description: Board is a stylish full-width masonry grid theme. Made for designers, artists, photographers and developers to show off their best work.
+description: The first ever iOS application used operationally worldwide supporting all air mobility squadrons within the Royal Canadian Air Force.
 featured_image: '/images/FinTrax/fintraxCard.png'
 ---
 
