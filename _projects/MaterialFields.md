@@ -11,7 +11,7 @@ featured_image: '/images/MaterialFields/mfCard.png'
 	<h2>Cocoa Touch Framework</h2>
     <p>A material UI driven text entry and value selection framework for modular validation layers.</p>
 	<br>
-    <a href="" class="buttonBlue button--large">CocoaPods</a>
+    <a href="https://cocoapods.org/pods/MaterialFields" class="buttonBlue button--large">CocoaPods</a>
 	<a href="https://github.com/barbulescualex/MaterialFields" class="buttonBlue button--large">GitHub</a>
 </div>
 
