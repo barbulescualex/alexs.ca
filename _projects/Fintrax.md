@@ -24,7 +24,7 @@ featured_image: '/images/FinTrax/fintraxCard.png'
 
 FinTrax is a data and expense tracking application designed to be used in flight on air mobility missions. It tracks everything from aircraft expenses and services to crew expenses and per diems. 
 
-If you want to know more, I go in depth in my article here.
+If you want to know more, I go in depth in my article [here](https://medium.com/@barbulescualex/my-experience-working-for-the-royal-canadian-air-force-as-an-ios-developer-c188d67b136c).
 
 ---
 
