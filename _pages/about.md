@@ -17,9 +17,8 @@ featured_image: /images/favicon.jpg
     <img src="https://media.giphy.com/media/st8fJ8DagstRm/giphy.gif">
 	<img src="/images/about/me4.JPG">
     <img src="https://media.giphy.com/media/W5D9oEAJvOHaE/200.gif">
-    <img src="http://45.media.tumblr.com/22af44e126286e681fac01edbbd558da/tumblr_no6dwrhKK41tzye0xo3_1280.gif">
-	<!-- <img src="/images/about/me5.JPG"> -->
-    <img src="/images/about/IMG_1079.JPG">
+    <img src="http://45.media.tumblr.com/22af44e126286e681fac01edbbd558da/tumblr_no6dwrhKK41tzye0xo3_1280.gif">c
+    <img src="/images/about/IMG_1079.png">
     <img src="https://media1.giphy.com/media/R1c7rUJA7uMoM/giphy.gif">
 	<img src="/images/about/me6.JPG">
     <img src="https://media.giphy.com/media/bXbwe3elqW9DW/giphy.gif">
