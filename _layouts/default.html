@@ -14,12 +14,12 @@
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="{% if page.url == "/" %}{{ site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}">
+	<meta name="twitter:title" content="{% if page.url == "/"%}{{ site.data.settings.basic_settings.site_title }}{% else %}{% if page.title %}{{ page.title }}{% endif %}{% endif %}">
 	<meta name="twitter:description" content="{{ page.description }}">
 	<meta name="twitter:image:src" content="{{ site.url }}{{ page.featured_image }}">
 
 	<!-- Facebook OpenGraph -->
-	<meta property="og:title" content="{% if page.url == "/" %}{{ site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{ page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}" />
+	<meta property="og:title" content="{% if page.url == "/"%}{{ site.data.settings.basic_settings.site_title }}{% else %}{% if page.title %}{{ page.title }}{% endif %}{% endif %}" />
 	<meta property="og:description" content="{{ page.description }}" />
 	<meta property="og:image" content="{{ site.url }}{{ page.featured_image }}" />
 
