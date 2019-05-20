@@ -14,12 +14,12 @@
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Thank you – Alex Barbulescu">
+	<meta name="twitter:title" content="Thank you">
 	<meta name="twitter:description" content="">
 	<meta name="twitter:image:src" content="http://localhost:4000/images/demo/about.jpg">
 
 	<!-- Facebook OpenGraph -->
-	<meta property="og:title" content="Thank you – Alex Barbulescu" />
+	<meta property="og:title" content="Thank you" />
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="http://localhost:4000/images/demo/about.jpg" />
 
@@ -80,7 +80,7 @@
 					</li>
 					
 					<li class="menu__list__item">
-						<a href="/blog" class="menu__list__item__link">Blog</a>
+						<a href="/blog/" class="menu__list__item__link">Blog</a>
 					</li>
 					
 					<li class="menu__list__item">
