@@ -18,10 +18,10 @@ menu_settings:
    #   url: '/contact'
 
 footer_settings:
-  footer_tagline: Professional App Developer. Computer Engineering student at the University of Waterloo.
+  footer_tagline: Creating experiences in iOS. Computer Engineering student at the University of Waterloo.
 
 grid_settings:
-  overlay_opacity: 1
+  overlay_opacity: 0.3
   grid_spacing: 10
   content_alignment: bottom
 

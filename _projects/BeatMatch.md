@@ -44,4 +44,3 @@ I'm currently working on making tuturials out of all the things I've learned. Ma
 
 1. [Using Swift Playgrounds & Playground Books](https://medium.com/@barbulescualex/using-swift-playgrounds-playground-books-87c2707be2b5)
 2. [Making Your First Circle Using Metal Shaders](https://medium.com/@barbulescualex/making-your-first-circle-using-metal-shaders-1e5049ec8505)
-alexs.ca

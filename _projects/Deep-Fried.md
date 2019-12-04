@@ -14,7 +14,7 @@ featured_image: '/images/DF/dfCard.png'
 
 	<img src="/images/DF/DeepFriedAppIcon.png" class="roundedAppIcon" />
 
-	<h2>4.7/5 stars | 1200+ ratings</h2>
+	<h2>4.8/5 stars | 3300+ ratings</h2>
 	<br>
 	<a href="https://itunes.apple.com/us/app/deep-fried/id1436647902?mt=8&uo=4" class="button button--large red">Download</a>
 	<a href="https://deepfried.app/" class="button button--large red">Visit Website</a>
