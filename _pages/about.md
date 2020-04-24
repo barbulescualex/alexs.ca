@@ -2,7 +2,7 @@
 title: null
 layout: pageNoTitle
 subtitle: null
-description: Alex Barbulescu is developer, Computer Engineering student, Apex Legends player (ex Fortnite player, sorry Fortnite) and Netflixer.
+description: Uhh idk.
 featured_image: /images/favicon.jpg
 ---
 <script type="text/javascript">
@@ -10,7 +10,6 @@ featured_image: /images/favicon.jpg
 </script>
 
 <div class="gallery" data-columns="3">
-More than just code. Reach out.
 	<img src="/images/about/me1.JPG">
     <img src="https://media.giphy.com/media/lDmsGbXcCuyOI/giphy.gif">
 	<img src="/images/about/me2.JPG">
