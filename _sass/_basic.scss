@@ -98,6 +98,35 @@ h3, .h3 {
 		display: inline;
 	}
 
+	embed {
+		display: inline;
+
+		@include mq(phonel) {
+			width: 95%;
+			//height: 100px;
+		}
+		
+		@include mq(tabletp) {
+			width: 90%;
+			// height: 150px;
+		}
+	
+		@include mq(tabletl) {
+			width: 90%;
+			// height: 150px;
+		}
+	
+		@include mq(laptop) {
+			width: 80%;
+			// height: 200px;
+		}
+	
+		@include mq(desktop) {
+			width: 75%;
+			// height: 250px;
+		}
+	}
+
 	blockquote {
 		display: inline-block;
 	}
@@ -109,6 +138,33 @@ h3, .h3 {
 	display: inline;
 	height: 15em;
 
+	@include mq(phonel) {
+		width: 95%;
+		//height: 100px;
+	}
+	
+	@include mq(tabletp) {
+		width: 90%;
+		// height: 150px;
+	}
+
+	@include mq(tabletl) {
+		width: 90%;
+		// height: 150px;
+	}
+
+	@include mq(laptop) {
+		width: 80%;
+		// height: 200px;
+	}
+
+	@include mq(desktop) {
+		width: 75%;
+		// height: 250px;
+	}
+}
+
+.resume {
 	@include mq(phonel) {
 		width: 95%;
 		//height: 100px;

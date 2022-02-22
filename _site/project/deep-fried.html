@@ -123,10 +123,12 @@
 
 	<img src="/images/DF/DeepFriedAppIcon.png" class="roundedAppIcon" />
 
-	<h2>4.8/5 stars | 3300+ ratings</h2>
+	<h2>4.6/5 stars | 4K+ ratings</h2>
 	<br />
 	<a href="https://itunes.apple.com/us/app/deep-fried/id1436647902?mt=8&amp;uo=4" class="button button--large red">Download</a>
 	<a href="https://deepfried.app/" class="button button--large red">Visit Website</a>
+	<br />
+	<h2>Acquired in June of 2020</h2>
 </div>
 <div class="gallery" data-columns="5">
 	<img src="/images/DF/CameraPreviewX.png" class="roundedImage" />
@@ -138,95 +140,87 @@
 
 <hr />
 
-<h3 id="what-is-it">What is it</h3>
+<h3 id="overview">Overview</h3>
 
-<p>Deep Fried is an image editing and processing application. I’m the <strong>sole developer and maintainer</strong> of this application!</p>
+<p>Deep Fried is an image editing and processing application. It served an underrepresented space in “meme maker” type apps which led to its success and popularity. To date it still remains the most popular app in its space.</p>
 
-<p>You can:</p>
-
-<ul>
-  <li>Take fried images straight from your camera</li>
-  <li>Warp images</li>
-  <li>Add text</li>
-  <li>Add custom assets</li>
-  <li>Interact directly with your Deep Fried Meme folder in your camera roll</li>
-</ul>
+<p>I was the <strong>sole developer and maintainer</strong> of the application before selling it. At the time of sale, it was pulling in around 2K daily active users.</p>
 
 <hr />
 
-<h3 id="technical-details">Technical Details</h3>
+<h3 id="development">Development</h3>
 
-<p>As an image editing and processing application Deep Fried presented many technical hurdles to overcome. Developing novel features that nobody has done presented a lot of pain points.</p>
+<p>As an image editing and processing application, Deep Fried had a variety of technical obstacles to overcome. Besides developing novel features, minimizing system resource usage was at the forefront of my efforts.</p>
 
 <h4 id="frameworks-used">Frameworks Used:</h4>
 <ul>
-  <li>MetalKit</li>
+  <li>Metal</li>
   <li>Core Image</li>
   <li>AVFoundation</li>
   <li>PhotoKit</li>
   <li>Core Data</li>
-  <li>Firebasae (analytics tools)</li>
+  <li>Firebase (analytics tools)</li>
 </ul>
 
-<p>Talking about each individual feature by itself is the easiest way to present the technical difficulties</p>
+<p>You can find demonstrations of the skills I had developed in making this application on my <a href="https://medium.com/@barbulescualex">Medium</a> blog in the form of tutorial projects.</p>
 
-<hr />
+<!-- ---
 
-<h4 id="deep-fried-camera-avfoundation--core-image--metalkit">Deep Fried Camera: AVFoundation | Core Image | MetalKit</h4>
+#### Deep Fried Camera: AVFoundation | Core Image | MetalKit
 
-<p>Perhaps this is my most novel feature inside the application. I take buffer data in from the camera, apply the filters on the data and display it back to the screen in real time.</p>
+Perhaps this is my most novel feature inside the application. I take buffer data in from the camera, apply the filters on the data and display it back to the screen in real time.
 
-<p><strong>GPU and CPU</strong></p>
+**GPU and CPU**
 
-<p>At first this process was very CPU intensive as I would be creating a CIImage from the buffer data to apply the filters (this takes place on the GPU through the Core Image framework) but then transforming it into a UIImage to display in an UIImageView on screen 30FPS. While this worked just fine the overall resource usage was very high. I then set out to optimize this by removing the need for the CPU to do work by displaying the data from the GPU directly from the screen. This led me into using the MetalKit framework, replacing the UIImageView with a MetalKit view.</p>
+At first this process was very CPU intensive as I would be creating a CIImage from the buffer data to apply the filters (this takes place on the GPU through the Core Image framework) but then transforming it into a UIImage to display in an UIImageView on screen 30FPS. While this worked just fine the overall resource usage was very high. I then set out to optimize this by removing the need for the CPU to do work by displaying the data from the GPU directly from the screen. This led me into using the MetalKit framework, replacing the UIImageView with a MetalKit view. 
 
-<p>While this significantly cut down on my resource usage, I noticed older devices (pre  A10) could not handle the MetalKit view inside of my application. So for those devices I still use the CPU to display the processed camera feed.</p>
+While this significantly cut down on my resource usage, I noticed older devices (pre  A10) could not handle the MetalKit view inside of my application. So for those devices I still use the CPU to display the processed camera feed.
 
-<p><strong>Initiating &amp; Switching Cameras</strong></p>
+**Initiating & Switching Cameras**
 
-<p>Unsuprisingly these processes can be very slow on the main thread. Moving these to background threads is mandatory (well not really, only if you want to provide a better user experience)</p>
+Unsuprisingly these processes can be very slow on the main thread. Moving these to background threads is mandatory (well not really, only if you want to provide a better user experience)
 
-<hr />
+---
 
-<h4 id="general-frying">General Frying:</h4>
+#### General Frying:
 
-<p>This is simply an extension of the Deep Fried camera (well this one actually came first). The only difference is instead of creating a CIImage from the buffer data I create it from the UIImage the user took/selected.</p>
+This is simply an extension of the Deep Fried camera (well this one actually came first). The only difference is instead of creating a CIImage from the buffer data I create it from the UIImage the user took/selected.
 
-<hr />
+---
 
-<h4 id="warp-controller-core-image">Warp Controller: Core Image</h4>
+#### Warp Controller: Core Image
 
-<p>The warp controller allows you to bump, pinch and swirl images based on touch input. You can adjust the radius and intensity of the effect.</p>
+The warp controller allows you to bump, pinch and swirl images based on touch input. You can adjust the radius and intensity of the effect.
 
-<p><strong>Translating Touches</strong></p>
+**Translating Touches**
 
-<p>This was the most annoying part of this feature by far, mainly because I tried to be lazy instead of actually doing some math. To effectively translate touches on an UIImageView holding an image into tangible coordinates (and radius of effect) for the <em>actual image</em> you need to know the pixel density difference of the screen vs image and figure out how it’s sitting inside the UIImageView. (It would be nice if the UIImageView could provide this sort of information).</p>
+This was the most annoying part of this feature by far, mainly because I tried to be lazy instead of actually doing some math. To effectively translate touches on an UIImageView holding an image into tangible coordinates (and radius of effect) for the *actual image* you need to know the pixel density difference of the screen vs image and figure out how it's sitting inside the UIImageView. (It would be nice if the UIImageView could provide this sort of information).
 
-<p>After calculating the density difference, some ratio math can let you know wether all the sides are touching the UIImageView (super rare) or wether the top/bottom or left/right is touching the UIImageView. From there you need to calculate the no touch zones.</p>
+After calculating the density difference, some ratio math can let you know wether all the sides are touching the UIImageView (super rare) or wether the top/bottom or left/right is touching the UIImageView. From there you need to calculate the no touch zones.
 
-<p>After all that you need to remember that the UIImageView’s origin point in its coordinate system is top-left while Core Image’s origin is in the bottom-left.</p>
+After all that you need to remember that the UIImageView's origin point in its coordinate system is top-left while Core Image's origin is in the bottom-left.
 
-<hr />
+---
 
-<h4 id="working-with-the-album-and-collection-view-photokit">Working With The Album And Collection View: PhotoKit</h4>
+#### Working With The Album And Collection View: PhotoKit
 
-<p><strong>Interacting With The User’s Camera Roll</strong></p>
+**Interacting With The User's Camera Roll**
 
-<p>At the root of my application resides the a UICollectionView which holds all the user’s images from their album. I use a singleton class (yeah I know, sue me) to interact with the camera roll that instantiates the “Deep Fried Memes” folder if it doesn’t exist, loads in thumbnails/full images, saves images, deletes images and fetches all the PHAssets.</p>
+At the root of my application resides the a UICollectionView which holds all the user's images from their album. I use a singleton class (yeah I know, sue me) to interact with the camera roll that instantiates the "Deep Fried Memes" folder if it doesn't exist, loads in thumbnails/full images, saves images, deletes images and fetches all the PHAssets.
 
-<p><strong>Populating the UICollectionView</strong></p>
+**Populating the UICollectionView**
 
-<p>Buggy, slow, high memory usage. All things that can happen if you don’t do this correctly. The saving grace is the PHCachingImageManager, this API handles most of the heavy lifting in terms of optimization.</p>
+Buggy, slow, high memory usage. All things that can happen if you don't do this correctly. The saving grace is the PHCachingImageManager, this API handles most of the heavy lifting in terms of optimization. 
 
-<p><strong>Registering to PHPhotoLibraryDidChange</strong></p>
+**Registering to PHPhotoLibraryDidChange**
 
-<p>PhotoKit sends out notifications like a mad man, if you’re updating the collection view every time you get this notification you’re wasting a lot energy. For this reason I using a flag “needsUpdate” that only gets set to true if the user leaves the application, deletes and image or saves an image.</p>
+PhotoKit sends out notifications like a mad man, if you're updating the collection view every time you get this notification you're wasting a lot energy. For this reason I using a flag "needsUpdate" that only gets set to true if the user leaves the application, deletes and image or saves an image.
 
-<hr />
+---
 
-<h4 id="adding-text--custom-assets-to-your-images">Adding Text &amp; Custom Assets To Your Images</h4>
+#### Adding Text & Custom Assets To Your Images
 
-<p>Luckily I found an abandoned framework for this one. I updated it from Swift 3, fixed memory leaks and extended its functionality. Using Core Data I let users add in their own custom assets into the Edit controller and implemented fonts.</p>
+Luckily I found an abandoned framework for this one. I updated it from Swift 3, fixed memory leaks and extended its functionality. Using Core Data I let users add in their own custom assets into the Edit controller and implemented fonts. -->
 
 
 </section>
@@ -257,9 +251,9 @@
 
 		<div class="footer__content">
 
-			<p class="footer__text">Creating experiences in iOS. Computer Engineering student at the University of Waterloo.</p>
+			<p class="footer__text">Creating experiences. Computer Engineering student at the University of Waterloo.</p>
 			<div class="footer__copyright">
-				<span>© 2020 Alex Barbulescu</span>
+				<span>© 2022 Alex Barbulescu</span>
 				<br/>
 			</div>
 

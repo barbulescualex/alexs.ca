@@ -14,10 +14,12 @@ featured_image: '/images/DF/dfCard.png'
 
 	<img src="/images/DF/DeepFriedAppIcon.png" class="roundedAppIcon" />
 
-	<h2>4.8/5 stars | 3300+ ratings</h2>
+	<h2>4.6/5 stars | 4K+ ratings</h2>
 	<br>
 	<a href="https://itunes.apple.com/us/app/deep-fried/id1436647902?mt=8&uo=4" class="button button--large red">Download</a>
 	<a href="https://deepfried.app/" class="button button--large red">Visit Website</a>
+	<br>
+	<h2>Acquired in June of 2020</h2>
 </div>
 <div class="gallery" data-columns="5">
 	<img src="/images/DF/CameraPreviewX.png" class= "roundedImage">
@@ -29,35 +31,31 @@ featured_image: '/images/DF/dfCard.png'
 
 ---
 
-### What is it
+### Overview
 
-Deep Fried is an image editing and processing application. I'm the **sole developer and maintainer** of this application!
+Deep Fried is an image editing and processing application. It served an underrepresented space in "meme maker" type apps which led to its success and popularity. To date it still remains the most popular app in its space.
 
-You can:
 
-* Take fried images straight from your camera
-* Warp images
-* Add text
-* Add custom assets
-* Interact directly with your Deep Fried Meme folder in your camera roll
+I was the **sole developer and maintainer** of the application before selling it. At the time of sale, it was pulling in around 2K daily active users.
 
 ---
 
-### Technical Details
+### Development
 
-As an image editing and processing application Deep Fried presented many technical hurdles to overcome. Developing novel features that nobody has done presented a lot of pain points.
+As an image editing and processing application, Deep Fried had a variety of technical obstacles to overcome. Besides developing novel features, minimizing system resource usage was at the forefront of my efforts.
 
 #### Frameworks Used:
-* MetalKit
+* Metal
 * Core Image
 * AVFoundation
 * PhotoKit
 * Core Data
-* Firebasae (analytics tools)
+* Firebase (analytics tools)
 
-Talking about each individual feature by itself is the easiest way to present the technical difficulties
 
----
+You can find demonstrations of the skills I had developed in making this application on my [Medium](https://medium.com/@barbulescualex) blog in the form of tutorial projects.
+
+<!-- ---
 
 #### Deep Fried Camera: AVFoundation | Core Image | MetalKit
 
@@ -113,4 +111,4 @@ PhotoKit sends out notifications like a mad man, if you're updating the collecti
 
 #### Adding Text & Custom Assets To Your Images
 
-Luckily I found an abandoned framework for this one. I updated it from Swift 3, fixed memory leaks and extended its functionality. Using Core Data I let users add in their own custom assets into the Edit controller and implemented fonts.
+Luckily I found an abandoned framework for this one. I updated it from Swift 3, fixed memory leaks and extended its functionality. Using Core Data I let users add in their own custom assets into the Edit controller and implemented fonts. -->
