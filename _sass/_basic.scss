@@ -580,3 +580,27 @@ section {
 		max-width: 45%;
 	}
 }
+
+.about-page-img {
+	width: 55%;
+
+	@include mq(phonel) {
+		width: 50%;
+	}
+
+	@include mq(tabletp) {
+		width: 40%;
+	}
+
+	@include mq(tabletl) {
+		width: 30%;
+	}
+
+	@include mq(laptop) {
+		width: 20%;
+	}
+
+	@include mq(desktop) {
+		width: 15%;
+	}
+}
